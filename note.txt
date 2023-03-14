@@ -1,0 +1,8 @@
+iniciar configuração jest
+npx jest --init
+npx ts-jest config:init
+
+
+
+gerar coverage
+npx jest --coverage
