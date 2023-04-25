@@ -99,7 +99,7 @@ describe('Order', () => {
     expect(persistencyMockSpy).toHaveBeenCalledTimes(1)
   })
 
-  it('shoud save order', () => {
+  it('shoud have be called the clear method when checkout is done', () => {
     const { sut, shoppingCartMock } = createSut()
     const shoppingCartMockSpy = jest.spyOn(shoppingCartMock, 'clear')
     sut.checkout()
