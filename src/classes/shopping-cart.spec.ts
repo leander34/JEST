@@ -49,7 +49,7 @@ describe('ShoopingCart', () => {
     const discountSpy = jest.spyOn(discountMock, 'claculate')
     expect(sut.total()).toBeCloseTo(101)
     expect(sut.totalWithDiscount()).toBeCloseTo(101)
-    expect(discountSpy).toHaveBeenCalled()
+    expect(discountSpy).toHaveBeenCalledTimes(1)
   })
 
   it('should add product and clear cart', () => {
